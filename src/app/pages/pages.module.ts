@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { CommentsPipe } from './comments.pipe';
 
 
 
@@ -11,6 +12,7 @@ import { HomeComponent } from './home/home.component';
     AboutComponent,
     ContactComponent,
     HomeComponent,
+    CommentsPipe,
   ],
   imports: [
     CommonModule
