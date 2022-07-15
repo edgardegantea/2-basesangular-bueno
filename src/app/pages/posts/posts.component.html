@@ -1,38 +1,17 @@
 <h1>Comentarios</h1>
 
-<div *ngFor="let comentario of comentarios | async">
-  <div class="card">
-    <div class="card-body">
-      <div class="card-title">
-        <h5>{{ comentario.name }}</h5>
-      </div>
-      <div class="card-text">
-        {{ comentario.email }}
-        <h4>{{ comentario.body }}</h4>
+<div class="row">
+  <div class="col-md-6 mb-3" *ngFor="let comentario of comentarios | async">
+    <div class="card text-bg-light">
+      <div class="card-body">
+        <div class="card-title">
+          <h5>{{ comentario.name }}</h5>
+        </div>
+        <div class="card-text">
+          {{ comentario.email }}
+          <h4>{{ comentario.body }}</h4>
+        </div>
       </div>
     </div>
   </div>
-
-  <br>
-
 </div>
-
-<br>
-
-<h1>Publicaciones</h1>
-<br>
-    <div *ngFor="let data of mensajes | async">
-        <div class="card">
-            <div class="card-body">
-                <div class="card-title">
-                    <h5>{{ data.title }}</h5>
-                </div>
-                <div class="card-text">
-                    {{ data.body }}
-                </div>
-            </div>
-        </div>
-
-        <br>
-
-    </div>
